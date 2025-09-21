@@ -17,7 +17,7 @@ app.post('/send-name', async (req, res) => {
     if (!name) return res.status(400).json({ error: 'Missing name' });
 
     const text = `Name submitted: ${name}`;
-    const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+    const url = `https://api.telegram.org/bot${8249494993:AAFsd41wclMXBSG7tyJh93k4HMnWYPFJxp0}/sendMessage`;
 
     const response = await axios.post(url, { chat_id: CHAT_ID, text });
     return res.json(response.data);
